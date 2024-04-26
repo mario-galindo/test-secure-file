@@ -30,3 +30,10 @@ steps:
 
 - powershell: Get-ChildItem -Path fastlane -recurse
 
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'fastlane'
+    artifact: 'fastlaneBuild'
+    publishLocation: 'pipeline'
+  displayName: 'Publish Artifact'
+
