@@ -6,6 +6,6 @@ pool:
 
 steps:
 - task: Bash@3
-inputs:
-  targetType: 'inline'
-  script: echo testing pipeline
+  inputs:
+    targetType: 'inline'
+    script: echo testing pipeline
