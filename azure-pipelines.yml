@@ -13,7 +13,7 @@ steps:
 - powershell: Get-ChildItem -Path '.' -recurse
 
 - task: DownloadSecureFile@1
-  name: "Download File"
+  name: "DownloadFile"
   inputs:
     secureFile: 'mySecureFile.json'
   displayName: "Download Key"
