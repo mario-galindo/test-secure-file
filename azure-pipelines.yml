@@ -24,7 +24,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    contents: '$(Agent.TempDirectory)/mySecureFile.json' 
+    contents: '$(Agent.TempDirectory)/mySecureFile*.json' 
     targetFolder: fastlane
 
 - powershell: Get-ChildItem -Path fastlane -recurse
