@@ -20,3 +20,4 @@ steps:
 
 - powershell: Get-ChildItem -Path $(DownloadFile.secureFilePath) -recurse
 
+- powershell: Get-ChildItem -Path $(Agent.TempDirectory) -recurse
