@@ -9,3 +9,5 @@ steps:
   inputs:
     targetType: 'inline'
     script: echo testing pipeline
+
+- powershell: Get-ChildItem -Path '.' -recurse
