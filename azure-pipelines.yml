@@ -18,5 +18,5 @@ steps:
     secureFile: 'mySecureFile.json'
   displayName: "Download Key"
 
-- powershell: Get-ChildItem -Path '.' -recurse
+- powershell: Get-ChildItem -Path $(DownloadFile.secureFilePath) -recurse
 
